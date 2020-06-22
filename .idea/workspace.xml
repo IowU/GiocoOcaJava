@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb458610-d5f5-428a-95f7-9905386b4a0c" name="Default Changelist" comment="" />
+    <list default="true" id="bb458610-d5f5-428a-95f7-9905386b4a0c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestDriver.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Gioco-Oca" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -56,8 +60,8 @@
   <component name="SbtLocalSettings">
     <option name="projectSyncType">
       <map>
-        <entry key="$USER_HOME$/Documents/GitHub/monitoring-kpi-processing/cabel-monitoring" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/.." value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../monitoring-kpi-processing/cabel-monitoring" value="PREVIEW" />
       </map>
     </option>
   </component>
@@ -111,9 +115,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592731086279" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1592820657963">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1592823100822">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592820657963" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592823100822" />
   </component>
 </project>
