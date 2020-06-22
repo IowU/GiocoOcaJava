@@ -66,10 +66,14 @@ public class Board {
             int currentEffect = giocatore.getPosition().getEffetto();
 
             if (currentPosition + currentEffect > Board.MAX_SLOT - 1) {
-                int difference = Board.MAX_SLOT - 1 - (currentPosition + currentEffect);
+                System.out.println(currentPosition);
+                System.out.println(currentEffect);
+                int difference = (currentPosition + currentEffect) - Board.MAX_SLOT - 1;
+                System.out.println(difference);
                 giocatore.setPosition(board[Board.MAX_SLOT - 1 - difference]);
             } else if (currentPosition + currentEffect < 0) {
-                int difference = currentEffect - currentPosition;
+                int difference = currentEffect + currentPosition;
+                difference = (difference < 0) ? difference * - 1 : difference;
                 giocatore.setPosition(board[currentPosition + difference]);
             } else {
                 giocatore
