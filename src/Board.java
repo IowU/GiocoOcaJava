@@ -37,14 +37,13 @@ public class Board {
 
         for (int i = 0; i < board.length; i++) {
             if (i == 4) {
-                board[i] = new MovePlayerSlot();
+                board[i] = new MovePlayerSlot(getBoard(),i);
                 board[i].setPosizione(i);
             } else if (i % 8 == 0 && i != 0) {
-                board[i] = new MovePlayerSlot();
+                board[i] = new MovePlayerSlot(getBoard(),i);
                 board[i].setPosizione(i);
             } else board[i] = new EmptySlot();
             board[i].setPosizione(i);
-
         }
 
         player1.setPosition(board[0]);
@@ -58,7 +57,7 @@ public class Board {
         int rolledPosition = giocatore.rollDice();
 
         if (giocatore.getPosition().getPosizione() + rolledPosition > Board.MAX_SLOT - 1) {
-            giocatore.setPosition(board[Board.MAX_SLOT - 1 - rolledPosition - (Board.MAX_SLOT - 1 - giocatore.getPosition().getPosizione())]);
+            giocatore.setPosition(board[Board.MAX_SLOT - 1 - (rolledPosition - (Board.MAX_SLOT - 1 - giocatore.getPosition().getPosizione()))]);
         } else giocatore.setPosition(board[giocatore.getPosition().getPosizione() + rolledPosition]);
 
         while (giocatore.getPosition().getEffetto() != 0) {
@@ -68,7 +67,7 @@ public class Board {
             if (currentPosition + currentEffect > Board.MAX_SLOT - 1) {
                 System.out.println(currentPosition);
                 System.out.println(currentEffect);
-                int difference = (currentPosition + currentEffect) - Board.MAX_SLOT - 1;
+                int difference = (currentPosition + currentEffect) - (Board.MAX_SLOT - 1);
                 System.out.println(difference);
                 giocatore.setPosition(board[Board.MAX_SLOT - 1 - difference]);
             } else if (currentPosition + currentEffect < 0) {
