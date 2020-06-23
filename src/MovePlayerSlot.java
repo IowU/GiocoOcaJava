@@ -6,17 +6,5 @@ public class MovePlayerSlot extends Slot {
         int randomNumber = (random.nextInt(Board.MAX_SLOT - 1));
         int randomNumberFinal = (randomNumber - (randomNumber * 2 * random.nextInt(1)));
         setEffetto(randomNumberFinal);
-
-        while (Math.abs(randomNumberFinal) % 8 == 0) {
-            randomNumber = (random.nextInt(Board.MAX_SLOT - 1));
-            randomNumberFinal = (randomNumber - (randomNumber * 2 * random.nextInt(1)));
-            setEffetto(randomNumberFinal);
-        }
-
-        while (getPosizione() == 4 && randomNumberFinal % 4 == 0) {
-            randomNumber = (random.nextInt(Board.MAX_SLOT - 1));
-            randomNumberFinal = (randomNumber - (randomNumber * 2 * random.nextInt(1)));
-            setEffetto(randomNumberFinal);
-        }
     }
 }

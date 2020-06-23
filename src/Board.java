@@ -44,7 +44,6 @@ public class Board {
                 board[i].setPosizione(i);
             } else board[i] = new EmptySlot();
             board[i].setPosizione(i);
-
         }
 
         player1.setPosition(board[0]);
