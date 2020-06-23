@@ -57,7 +57,7 @@ public class Board {
         int rolledPosition = giocatore.rollDice();
 
         if (giocatore.getPosition().getPosizione() + rolledPosition > Board.MAX_SLOT - 1) {
-            giocatore.setPosition(board[Board.MAX_SLOT - 1 - rolledPosition - (Board.MAX_SLOT - 1 - giocatore.getPosition().getPosizione())]);
+            giocatore.setPosition(board[Board.MAX_SLOT - 1 - (rolledPosition - (Board.MAX_SLOT - 1 - giocatore.getPosition().getPosizione()))]);
         } else giocatore.setPosition(board[giocatore.getPosition().getPosizione() + rolledPosition]);
 
         while (giocatore.getPosition().getEffetto() != 0) {
