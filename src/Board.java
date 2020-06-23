@@ -37,10 +37,10 @@ public class Board {
 
         for (int i = 0; i < board.length; i++) {
             if (i == 4) {
-                board[i] = new MovePlayerSlot();
+                board[i] = new MovePlayerSlot(getBoard(),i);
                 board[i].setPosizione(i);
             } else if (i % 8 == 0 && i != 0) {
-                board[i] = new MovePlayerSlot();
+                board[i] = new MovePlayerSlot(getBoard(),i);
                 board[i].setPosizione(i);
             } else board[i] = new EmptySlot();
             board[i].setPosizione(i);
